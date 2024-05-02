@@ -34,7 +34,7 @@ plot(tOut, y1, 'b-', 'LineWidth', 1);
 grid on
 
 legend(lable_name);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
@@ -119,7 +119,7 @@ plot(tOut, y2, 'b-', 'LineWidth', 1);
 grid on
 
 legend(lable_name);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
@@ -200,7 +200,7 @@ plot(tOut, y3, 'b-', 'LineWidth', 1);
 grid on
 
 legend(lable_name);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
@@ -282,7 +282,7 @@ plot(tOut, y4, 'b-', 'LineWidth', 1);
 grid on
 
 legend(lable_name);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
@@ -366,7 +366,7 @@ plot(tOut, y5, 'b', tOut, y6, 'g', 'LineWidth', 1);
 grid on
 
 legend(first_legend, second_legend);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
@@ -458,7 +458,7 @@ plot(tOut, y5, 'b', tOut, y7, 'g', 'LineWidth', 1);
 grid on
 
 legend(first_legend, second_legend);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
@@ -551,7 +551,7 @@ plot(tOut, y5, 'b', tOut, y8, 'g', 'LineWidth', 1);
 grid on
 
 legend(first_legend, second_legend);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
@@ -643,7 +643,7 @@ plot(tOut, y5, 'b', tOut, y9, 'g', 'LineWidth', 1);
 grid on
 
 legend(first_legend, second_legend);
-title('Реакция на единичное воздействие: impulse');
+title('Реакция на импульсное воздействие: impulse');
 xlabel('Время, c');
 ylabel('x(t)');
 
