@@ -7,8 +7,8 @@ A = [T * T1, T + T1, 1, 0];
 
 Wp = tf(B, A);
 
-[mag, pha, wr] = bode(sys);
-w = logspace(-6, 1, 1000);
+my_bode(Wp);
+%w = logspace(-6, 1, 1000);
 
 figure('Name', 'nyquist(sys)');
 axis([-4, 4, -4, 4]);
