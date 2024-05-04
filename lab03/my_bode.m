@@ -1,4 +1,4 @@
-function my_bode(sys)
+function my_bode(sys, filename)
     % Генерируем частоты для анализа
     w = logspace(-2, 3, 1000);
     
@@ -7,6 +7,9 @@ function my_bode(sys)
     
     % Преобразуем величину ЛАЧХ в децибелы
     mag_db = 20 * log10(squeeze(mag));
+    
+    % Создаем новый график
+    figure;
     
     % --- ЛАЧХ ---
     subplot(2, 1, 1);
@@ -41,4 +44,11 @@ function my_bode(sys)
         cross_freq = w(minus180_crossings(1));
         xline(cross_freq, 'Color', 'r', 'LineStyle', '--', 'LineWidth', 2); % Вертикальная линия
     end
+    
+    % Сохранение графика в формате PNG
+    if nargin < 2  % Если имя файла не указано
+        filename = 'graphics/My Bode.png';  % Стандартное имя файла
+    end
+    
+    saveas(gcf, filename);  % Сохранение графика в формате PNG
 end
