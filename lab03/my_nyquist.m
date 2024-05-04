@@ -11,6 +11,7 @@ function my_nyquist(sys, w)
     real_part = magnitude .* cos(phase_rad);
     imag_part = magnitude .* sin(phase_rad);
 
+<<<<<<< Updated upstream
     % Строим годограф
     plot(real_part, imag_part, '-b', real_part, -imag_part, '-b');
     title('Годограф Найквиста (ЛАФЧХ)');
@@ -19,4 +20,12 @@ function my_nyquist(sys, w)
     grid on;
 
     saveas(gcf, 'graphics/My Nyquist.png');
+=======
+% Строим годограф
+plot(real_part, imag_part, '-b', real_part, -imag_part, '-b');
+title('ЛАФЧХ');
+xlabel('Re(G(jw))');
+ylabel('Im(G(jw))');
+grid on;
+>>>>>>> Stashed changes
 end
