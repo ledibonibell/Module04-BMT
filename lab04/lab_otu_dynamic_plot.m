@@ -54,7 +54,7 @@ for k = 1 : 1 : length(W)
  end
 end
    hold off;
- subplot(3,2,[4,6])
+ subplot(3,2,4)
 
 for k = 1 : 1 : length(W)
  if isproper(W{k})
@@ -69,6 +69,19 @@ hold off
     title('Nyquist Diagram')
     xlabel('Real Axis, sec^-^1')
     ylabel('Imaginary Axis, sec^-^1')
+
+ hold off;
+ subplot(3,2,6)
+
+for k = 1 : 1 : length(W)
+ if isproper(W{k})
+    pzmap(W{k}, color);
+    title('Pole-Zero Map');
+    axis([-3 2 -2 2]);
+ end
+end
+
+
 
 saveas(gcf, road);
 end
