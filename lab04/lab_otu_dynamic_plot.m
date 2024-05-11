@@ -1,4 +1,4 @@
-function lab_otu_dynamic_plot(T, k, T1, k1, graph, road, color)
+function lab_otu_dynamic_plot(T, k, T1, k1, graph, road, color, biba)
 
 B = k*k1;
 A = [T1*T, T1+T,1, k*k1];
@@ -84,6 +84,22 @@ end
 
 
 saveas(gcf, road);
+
+figure('Name', 'Годограф Михайлова');
+
+w=0.001:0.01:10;
+GM=freqs(A, 1, w);
+U=real(GM);
+V=imag(GM);
+plot(U,V, color); 
+hold on
+plot(0,0, 'r+');
+grid on
+xlabel('Re, sec^-^1')
+ylabel('Im, sec^-^1')
+title(graph);
+saveas(gcf, biba);
+
 end
 
 
